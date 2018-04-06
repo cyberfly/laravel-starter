@@ -4,4 +4,4 @@ Laravel 5.6 starter
 
 Admin template:
 
-https://github.com/puikinsh/Adminator-admin-dashboard
+https://www.bootstrapdash.com/product/stellar-free/
