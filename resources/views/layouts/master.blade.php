@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Stellar Admin</title>
   <!-- plugins:css -->
-  <link rel="stylesheet" href="node_modules/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="node_modules/simple-line-icons/css/simple-line-icons.css">
-  <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="{{ asset('node_modules/mdi/css/materialdesignicons.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('node_modules/simple-line-icons/css/simple-line-icons.css') }}">
+  <link rel="stylesheet" href="{{ asset('node_modules/flag-icon-css/css/flag-icon.min.css') }}">
   <!-- endinject -->
   <!-- plugin css for this page -->
-  <link rel="stylesheet" href="node_modules/chartist/dist/chartist.min.css" />
-  <link rel="stylesheet" href="node_modules/jvectormap/jquery-jvectormap.css" />
+  <link rel="stylesheet" href="{{ asset('node_modules/chartist/dist/chartist.min.css') }}" />
+  <link rel="stylesheet" href="{{ asset('node_modules/jvectormap/jquery-jvectormap.css') }}" />
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
@@ -25,8 +25,8 @@
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper">
-        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo.svg" alt="logo"></a>
-        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo_mini.svg" alt="logo"></a>
+        <a class="navbar-brand brand-logo" href="index.html"><img src="{{ asset('images/logo.svg') }}" alt="logo"></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="{{ asset('images/logo_mini.svg') }}" alt="logo"></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center">
         <p class="page-name d-none d-lg-block">Hi, Dave Mattew</p>
@@ -47,7 +47,7 @@
             <div class="dropdown-menu navbar-dropdown mail-notification dropdownAnimation" aria-labelledby="MailDropdown">
               <a class="dropdown-item" href="#">
                 <div class="sender-img">
-                  <img src="images/faces/face6.jpg" alt="">
+                  <img src="{{ asset('images/faces/face6.jpg') }}" alt="">
                   <span class="badge badge-success">&nbsp;</span>
                 </div>
                 <div class="sender">
@@ -57,7 +57,7 @@
               </a>
               <a class="dropdown-item" href="#">
                 <div class="sender-img">
-                  <img src="images/faces/face2.jpg" alt="">
+                  <img src="{{ asset('images/faces/face2.jpg') }}" alt="">
                   <span class="badge badge-success">&nbsp;</span>
                 </div>
                 <div class="sender">
@@ -67,7 +67,7 @@
               </a>
               <a class="dropdown-item" href="#">
                 <div class="sender-img">
-                  <img src="images/faces/face3.jpg" alt="">
+                  <img src="{{ asset('images/faces/face3.jpg') }}" alt="">
                   <span class="badge badge-primary">&nbsp;</span>
                 </div>
                 <div class="sender">
@@ -77,7 +77,7 @@
               </a>
               <a class="dropdown-item" href="#">
                 <div class="sender-img">
-                  <img src="images/faces/face4.jpg" alt="">
+                  <img src="{{ asset('images/faces/face4.jpg') }}" alt="">
                   <span class="badge badge-warning">&nbsp;</span>
                 </div>
                 <div class="sender">
@@ -142,7 +142,7 @@
           </li>
           <li class="nav-item d-none d-sm-block profile-img">
             <a class="nav-link profile-image" href="#">
-              <img src="images/faces/face4.jpg" alt="profile-img">
+              <img src="{{ asset('images/faces/face4.jpg') }}" alt="profile-img">
               <span class="online-status online bg-success"></span>
             </a>
           </li>
@@ -162,7 +162,7 @@
               <span class="nav-link">GENERAL</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">
+              <a class="nav-link" href="{{ url('/admin') }}">
                 <span class="menu-title">Dashboard</span>
                 <i class="icon-speedometer menu-icon"></i>
               </a>
@@ -189,7 +189,7 @@
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/tables/basic-table.html">
+              <a class="nav-link" href="{{ url('/admin/basic-table') }}">
                 <span class="menu-title">Tables</span>
                 <i class="icon-grid menu-icon"></i>
               </a>
@@ -204,7 +204,7 @@
               <span class="nav-link">FORMS</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="pages/forms/basic_elements.html">
+              <a class="nav-link" href="{{ url('/admin/basic-form') }}">
                 <span class="menu-title">Form elements</span>
                 <i class="icon-flag menu-icon"></i>
               </a>
@@ -259,14 +259,14 @@
   <!-- container-scroller -->
 
   <!-- plugins:js -->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="{{ asset('node_modules/jquery/dist/jquery.min.js') }}"></script>
+  <script src="{{ asset('node_modules/popper.js/dist/umd/popper.min.js') }}"></script>
+  <script src="{{ asset('node_modules/bootstrap/dist/js/bootstrap.min.js') }}"></script>
   <!-- endinject -->
   <!-- Plugin js for this page-->
-  <script src="node_modules/flot/jquery.flot.js"></script>
-  <script src="node_modules/flot/jquery.flot.resize.js"></script>
-  <script src="node_modules/flot.curvedlines/curvedLines.js"></script>
+  <script src="{{ asset('node_modules/flot/jquery.flot.js') }}"></script>
+  <script src="{{ asset('node_modules/flot/jquery.flot.resize.js') }}"></script>
+  <script src="{{ asset('node_modules/flot.curvedlines/curvedLines.js') }}"></script>
   <!-- End plugin js for this page-->
   <!-- inject:js -->
   <script src="{{ asset('js/off-canvas.js') }}"></script>
